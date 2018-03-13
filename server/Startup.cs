@@ -37,15 +37,7 @@ namespace Server
             // https://docs.asp.net/en/latest/security/anti-request-forgery.html
             services.AddAntiforgery(options => options.CookieName =  options.HeaderName = "X-XSRF-TOKEN");
 
-            // Register Entity Framework database context
-            // https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html
-            services.AddDbContext<DatabaseContext>(options =>
-            {
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
-            });
-
             services.AddIdentity<User, IdentityRole>()
-                .AddEntityFrameworkStores<DatabaseContext>()
                 .AddDefaultTokenProviders();
 
             services.AddMvcCore()

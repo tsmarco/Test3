@@ -202,6 +202,7 @@
 -r:"C:\Users\asdat\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
 -resource:"C:\t3\server\obj\Debug\netcoreapp1.0\serverdotnet-compile.deps.json",server.deps.json
 "C:\t3\server\Startup.cs"
+"C:\t3\server\Controllers\EntitiesController.cs"
 "C:\t3\server\Controllers\HomeController.cs"
-"C:\t3\server\Models\DatabaseContext.cs"
+"C:\t3\server\Models\EntitiesModel.cs"
 "C:\t3\server\Models\User.cs"
