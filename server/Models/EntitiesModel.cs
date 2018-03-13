@@ -23,6 +23,12 @@ namespace server.Models
             var result = new KeyValuePair<string, string>(id, entities[id]);
             return result;
         }
+        public KeyValuePair<string, string> postEntity(string id,string value)
+        {
+            entities.Add(id, value);
+            var result = new KeyValuePair<string, string>(id, value);
+            return result;
+        }
         public List<KeyValuePair<string, string>> getEntities()
         {
             return entities.ToList<KeyValuePair<string, string>>();
